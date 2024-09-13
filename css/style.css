@@ -1,0 +1,67 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+img{width: 100%;}
+body{
+    background-color: rgb(16, 75, 157);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.card{
+    width:300px;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px #000;
+    background-color: rgb(191, 211, 218);
+}
+.card>img{
+    border-radius: 5px 5px 0 0;
+}
+/*.content~ul a{    testvérek
+    background-color: #000;
+}
+.content+ul a{      szomszédja
+    background-color: #000;
+}
+    */
+.content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.content img{
+    width: 100px;
+    float: right;
+    margin: 0 0 0 1rem;
+    box-shadow: 2px 2px 2px rgba(1,1,1, .5);
+    border-radius: 5px;
+}
+.content p{
+    text-align: justify;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    display: inline-block;
+    padding: .5rem .8rem;
+    background-color: rgb(90, 91, 87);
+    border-radius: 5px;
+    text-decoration: none;
+    color:#fff;
+    transition: scale .1s;
+}
+a:hover{
+    background-color: rgb(14, 66, 96);
+    color: #fff;
+}
+a:active{
+    scale: .96;
+}
